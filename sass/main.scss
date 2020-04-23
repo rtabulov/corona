@@ -503,3 +503,41 @@ footer {
     }
   }
 }
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  // display: inline-block;
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    filter: blur(7px);
+    // height: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    // left: 110%;
+    transform: skew(15deg);
+    background-color: #ffffff;
+    opacity: 0.5;
+
+    animation: autoflash infinite 2.5s;
+    animation-delay: 2.5s;
+  }
+}
+
+@keyframes autoflash {
+  0% {
+    left: -10%;
+  }
+
+  30% {
+    left: 110%;
+  }
+
+  100% {
+    left: 110%;
+  }
+}
