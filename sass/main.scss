@@ -1,5 +1,15 @@
 @import "./normalize";
 
+@font-face {
+  font-family: Helvetica;
+  src: url("../fonts/Helvetica.otf");
+}
+
+@font-face {
+  font-family: "PF DinText Pro Medium";
+  src: url("../fonts/PFD.ttf");
+}
+
 html {
   font-family: Helvetica, sans-serif;
 }
